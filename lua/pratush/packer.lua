@@ -59,4 +59,25 @@ return require('packer').startup(function(use)
       'nvim-lualine/lualine.nvim',
       requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
+  --
+  -- use {
+  --     'numToStr/Comment.nvim',
+  --     config = function()
+  --         require('Comment').setup({
+  --             toogler = {
+  --                 line = '<C-/>',
+  --                 block = '<C-//>'
+  --             }
+  --         })
+  --     end
+  -- }
+
+  use {
+      'terrortylor/nvim-comment',
+      config = function ()
+        require('nvim_comment').setup({
+            line_mapping = "<C-/>"
+        })
+      end
+  }
 end)
