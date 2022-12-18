@@ -1,5 +1,5 @@
 function ColorMyLife(color)
-	color = color or "gruvbox"
+	color = color or "noctis"
 	vim.cmd.colorscheme(color)
 
 end
