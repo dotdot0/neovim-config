@@ -43,13 +43,16 @@ return require('packer').startup(function(use)
       tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
+  use 'nvim-tree/nvim-web-devicons'
+  use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'}
   
   use {
       "windwp/nvim-autopairs",
       config = function() require("nvim-autopairs").setup {} end
   }
 
+  use { 'kartikp10/noctis.nvim', requires = { 'rktjmp/lush.nvim' } }
+
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  use { "ellisonleao/gruvbox.nvim" }
 
 end)
