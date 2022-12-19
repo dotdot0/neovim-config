@@ -5,7 +5,9 @@ local opts = { noremap = true, silent = true }
 -- Move to previous/next
 map('n', '<C-h>', '<Cmd>BufferPrevious<CR>', opts)
 map('n', '<C-.>', '<Cmd>BufferNext<CR>', opts)
+map('n', '<C-s>', '<Cmd>w<CR>', opts)
 -- Re-order to previous/next
+--
 map('n', '<A-<>', '<Cmd>BufferMovePrevious<CR>', opts)
 map('n', '<A->>', '<Cmd>BufferMoveNext<CR>', opts)
 map('n', '<C-e>', '<Cmd>NvimTreeOpen<CR>', opts)
@@ -46,8 +48,9 @@ map('n', '<Space>bw', '<Cmd>BufferOrderByWindowNumber<CR>', opts)
 -- :BarbarDisable - very bad command, should never be used
 
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 vim.keymap.set("n", "<leader>q", vim.cmd.Ex)
-
+vim.keymap.set("n", "<C-s>", vim.cmd.w)
 
 
 

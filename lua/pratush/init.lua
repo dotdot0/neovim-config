@@ -18,6 +18,8 @@ require('indent_blankline').setup {
 
 lsp.setup()
 
+require("startup").setup({ theme = "evil" })
+
 require('lualine').setup()
 
 require('nvim_comment').setup({
