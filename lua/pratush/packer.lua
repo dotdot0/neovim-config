@@ -32,6 +32,9 @@ return require('packer').startup(function(use)
 		  -- Snippets
 		  {'L3MON4D3/LuaSnip'},
 		  {'rafamadriz/friendly-snippets'},
+
+          use 'simrat39/rust-tools.nvim'
+
 	  }
   }
 
@@ -58,6 +61,15 @@ return require('packer').startup(function(use)
   use {
       'nvim-lualine/lualine.nvim',
       requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
+  use {
+      'saecki/crates.nvim',
+      tag = 'v0.3.0',
+      requires = { 'nvim-lua/plenary.nvim' },
+      config = function()
+          require('crates').setup()
+      end,
   }
   --
   -- use {
