@@ -11,6 +11,11 @@ require('mason.settings').set({
 local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
+require('indent_blankline').setup {
+    char = '┊',
+    show_trailing_blankline_indent = false,
+}
+
 lsp.setup()
 
 require('lualine').setup()

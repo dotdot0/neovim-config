@@ -80,4 +80,30 @@ return require('packer').startup(function(use)
         })
       end
   }
+
+  -- use {'glepnir/dashboard-nvim'}
+  use {
+      "startup-nvim/startup.nvim",
+      requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+      config = function()
+          require"startup".setup({
+              header = {
+              type= "text",
+              oldfiles_directory = false,
+              align = "centre",
+              fold_section = false,
+              title = "Header",
+              margin = 5,
+              content = {
+                  "Yo"
+              },
+              highlight = "Statement",
+              default_color = "",
+              oldfiles_amount = 0
+          }})
+      end
+  }
+
+  use "lukas-reineke/indent-blankline.nvim"
+
 end)
