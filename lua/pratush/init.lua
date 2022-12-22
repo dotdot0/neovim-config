@@ -45,4 +45,4 @@ rt.hover_actions.hover_actions()
 require('rust-tools').runnables.runnables()
 
 vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme noctis]])
+vim.cmd([[colorscheme noirblaze]])
