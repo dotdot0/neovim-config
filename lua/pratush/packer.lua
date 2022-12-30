@@ -15,6 +15,8 @@ return require('packer').startup(function(use)
 
   use 'bluz71/vim-moonfly-colors'
 
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
 	  -- or                            , branch = '0.1.x',
@@ -111,15 +113,25 @@ return require('packer').startup(function(use)
 
   use "n1ghtmare/noirblaze-vim"
 
-  use {
-  "folke/which-key.nvim",
-  config = function()
-    require("which-key").setup {
+    use {
+        "folke/which-key.nvim",
+        config = function()
+        require("which-key").setup {
       -- your configuration comes here
       -- or leave it empty to use the default settings
       -- refer to the configuration section below
-    }
-  end
-}
+        }
+    end
+        }
 
+    use {
+        'kosayoda/nvim-lightbulb',
+        requires = 'antoinemadec/FixCursorHold.nvim',
+    }
+
+    use 'onsails/lspkind.nvim'
+
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup()
+    end}
 end)

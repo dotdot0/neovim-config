@@ -6,6 +6,7 @@ local opts = { noremap = true, silent = true }
 map('n', '<C-h>', '<Cmd>BufferPrevious<CR>', opts)
 map('n', '<C-.>', '<Cmd>BufferNext<CR>', opts)
 map('n', '<C-s>', '<Cmd>w<CR>', opts)
+map('n', '<C-t>', '<Cmd>ToggleTerm size=10<CR>', opts)
 -- Re-order to previous/next
 --
 map('n', '<A-<>', '<Cmd>BufferMovePrevious<CR>', opts)
