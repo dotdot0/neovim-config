@@ -7,6 +7,14 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  use { "catppuccin/nvim", as = "catppuccin" }
+
+  use 'nyoom-engineering/nyoom.nvim'
+
+  use 'louisboilard/pyramid.nvim'
+
+  use 'bluz71/vim-moonfly-colors'
+
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
 	  -- or                            , branch = '0.1.x',

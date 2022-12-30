@@ -85,6 +85,11 @@ _G.packer_plugins = {
     url = "https://github.com/romgrk/barbar.nvim",
     wants = { "nvim-web-devicons" }
   },
+  catppuccin = {
+    loaded = true,
+    path = "/home/pratush/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/pratush/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -198,6 +203,11 @@ _G.packer_plugins = {
     path = "/home/pratush/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["nyoom.nvim"] = {
+    loaded = true,
+    path = "/home/pratush/.local/share/nvim/site/pack/packer/start/nyoom.nvim",
+    url = "https://github.com/nyoom-engineering/nyoom.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/pratush/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -207,6 +217,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/pratush/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["pyramid.nvim"] = {
+    loaded = true,
+    path = "/home/pratush/.local/share/nvim/site/pack/packer/start/pyramid.nvim",
+    url = "https://github.com/louisboilard/pyramid.nvim"
   },
   ["rust-tools.nvim"] = {
     loaded = true,
@@ -223,6 +238,11 @@ _G.packer_plugins = {
     path = "/home/pratush/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["vim-moonfly-colors"] = {
+    loaded = true,
+    path = "/home/pratush/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
+    url = "https://github.com/bluz71/vim-moonfly-colors"
+  },
   ["which-key.nvim"] = {
     config = { "\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\0" },
     loaded = true,
@@ -236,10 +256,6 @@ time([[Defining packer_plugins]], false)
 time([[Config for which-key.nvim]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\0", "config", "which-key.nvim")
 time([[Config for which-key.nvim]], false)
--- Config for: crates.nvim
-time([[Config for crates.nvim]], true)
-try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vcrates\frequire\0", "config", "crates.nvim")
-time([[Config for crates.nvim]], false)
 -- Config for: nvim-comment
 time([[Config for nvim-comment]], true)
 try_loadstring("\27LJ\2\nT\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\17line_mapping\n<C-/>\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
@@ -248,6 +264,10 @@ time([[Config for nvim-comment]], false)
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
+-- Config for: crates.nvim
+time([[Config for crates.nvim]], true)
+try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vcrates\frequire\0", "config", "crates.nvim")
+time([[Config for crates.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
