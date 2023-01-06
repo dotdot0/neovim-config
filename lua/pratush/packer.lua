@@ -134,4 +134,12 @@ return require('packer').startup(function(use)
     use {"akinsho/toggleterm.nvim", tag = '*', config = function()
         require("toggleterm").setup()
     end}
+
+    use {'ray-x/starry.nvim', setup = function() 
+        -- see example setup below
+        vim.g.starry_italic_comments = false 
+        -- ...
+    end}
+
+    use 'paulfrische/reddish.nvim'
 end)
