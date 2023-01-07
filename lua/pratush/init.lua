@@ -23,7 +23,9 @@ require("startup").setup({ theme = "evil" })
 require('lualine').setup()
 
 require('nvim_comment').setup({
-    line_mapping = "<leader>c"
+    line_mapping = "<leader>c",
+    comment_empty = false,
+    comment_chunk_text_object = "<leader>x"
 })
 
 require('lspkind').init({
