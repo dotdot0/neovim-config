@@ -1,2 +1,8 @@
 require("pratush")
-vim.cmd([[colorscheme noctis]])
+
+
+
+vim.cmd("set number")
+vim.cmd("set relativenumber")
+
+
