@@ -21,7 +21,7 @@ return require('packer').startup(function(use)
 	  'nvim-treesitter/nvim-treesitter', 
 	  { run = ':TSUpdate' }
   )
-
+  use 'tanvirtin/monokai.nvim'
   use 'dnlhc/glance.nvim'
   use 'ThePrimeagen/harpoon'
   use 'mbbill/undotree'
