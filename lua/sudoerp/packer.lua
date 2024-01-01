@@ -30,6 +30,15 @@ return require('packer').startup(function(use)
 	  'nvim-lualine/lualine.nvim',
 	  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+  use 'ollykel/v-vim'
+  use {
+    "mcchrish/zenbones.nvim",
+    -- Optionally install Lush. Allows for more configuration or extending the colorscheme
+    -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
+    -- In Vim, compat mode is turned on as Lush only works in Neovim.
+    requires = "rktjmp/lush.nvim"
+  }
+  use({ 'rose-pine/neovim', as = 'rose-pine' })
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v2.x',

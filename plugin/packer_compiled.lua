@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/home/pratush/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/home/pratush/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/pratush/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -169,6 +174,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/pratush/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["v-vim"] = {
+    loaded = true,
+    path = "/home/pratush/.local/share/nvim/site/pack/packer/start/v-vim",
+    url = "https://github.com/ollykel/v-vim"
+  },
+  ["zenbones.nvim"] = {
+    loaded = true,
+    path = "/home/pratush/.local/share/nvim/site/pack/packer/start/zenbones.nvim",
+    url = "https://github.com/mcchrish/zenbones.nvim"
   }
 }
 
