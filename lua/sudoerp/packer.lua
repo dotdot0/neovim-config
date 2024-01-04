@@ -21,6 +21,7 @@ return require('packer').startup(function(use)
 	  'nvim-treesitter/nvim-treesitter', 
 	  { run = ':TSUpdate' }
   )
+  use '~/Documents/plugins/np.nvim'
   use 'tanvirtin/monokai.nvim'
   use 'dnlhc/glance.nvim'
   use 'ThePrimeagen/harpoon'
